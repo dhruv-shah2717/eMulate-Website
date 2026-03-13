@@ -1,0 +1,134 @@
+/* ========================================
+   Registration Section - Main Wrapper
+======================================== */
+.Registration-Section {
+    margin: 150px 0px 60px 0;
+}
+
+
+/* ========================================
+   Wide Glass Card (Two Column Layout)
+======================================== */
+.Registration-Section .registration-wide-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    border-radius: 25px;
+    padding: 20px 50px 60px 50px;
+    max-width: 1200px; /* Wider than login */
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+
+/* ========================================
+   Section Header (Same style as Login)
+======================================== */
+.Registration-Section .login-header i {
+    font-size: 3.1rem;
+    color: var(--accent);
+}
+
+.Registration-Section .login-header h2 {
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 60px;
+    font-size: 23px;
+}
+
+
+/* ========================================
+   Form Styling (Matches Login Section)
+======================================== */
+.Registration-Section .form-control {
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.Registration-Section .form-label {
+    font-size: 15px;
+    margin-left: 4px;
+    font-weight: 600;
+}
+
+.Registration-Section .form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+
+/* ========================================
+   Buttons Styling
+======================================== */
+.Registration-Section .login-btn {
+    background: var(--accent);
+    color: var(--text-white);
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.Registration-Section .outline-btn {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+}
+
+.Registration-Section .login-btn:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+
+/* ========================================
+   Validation & Error States
+======================================== */
+.Registration-Section .error-text {
+    color: #ff4d4d;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.Registration-Section .form-control.is-invalid {
+    border: 1.5px solid #ff4d4d !important;
+    background: rgba(255, 77, 77, 0.05);
+}
+
+
+/* ========================================
+   Search Divider (Two Column Split)
+======================================== */
+.Registration-Section .search-divider {
+    border-left: 1px solid var(--border);
+    padding-left: 30px;
+}
+
+
+/* ========================================
+   Responsive Design
+======================================== */
+@media (max-width: 800px) {
+
+    .Registration-Section {
+        margin: 110px 0px 60px 0;
+    }
+
+    .Registration-Section .search-divider {
+        border-top: 1px solid var(--border);
+        border-left: 0;
+        padding-top: 35px;
+        padding-left: 0;
+    }
+
+    .Registration-Section .Registration-wide-card {
+        padding: 30px;
+    }
+}

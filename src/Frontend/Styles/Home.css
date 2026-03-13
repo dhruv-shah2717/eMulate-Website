@@ -1,0 +1,244 @@
+/* ========================================
+   Hero Image Section - Main Wrapper
+======================================== */
+.Heroimage-Section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../Assets/Images/Hero_Back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.Heroimage-Section .hero-main-img {
+    width: 100% !important;
+    height: auto;
+    z-index: 1;
+    padding-top: 65px;
+}
+
+
+/* ========================================
+   Hero Section - Responsive Design
+======================================== */
+@media (max-width: 768px) {
+
+    .Heroimage-Section {
+        min-height: 550px;
+        height: auto;
+        width: 100%;
+        background-size: 100% 100%;
+    }
+
+    .Heroimage-Section .hero-main-img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        padding-top: 0;
+    }
+}
+
+
+/* ========================================
+   General Register Section - Main Wrapper
+======================================== */
+.Genralregister-Section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Glass Card */
+.Genralregister-Section .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(7px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    max-width: 650px;
+    width: 100%;
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+
+/* ========================================
+   Card Header Elements
+======================================== */
+.Genralregister-Section .card-header i {
+    font-size: 55px;
+    color: var(--text-dark);
+}
+
+.Genralregister-Section .card-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 10px 0;
+}
+
+.Genralregister-Section .accent-text {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+
+/* ========================================
+   Event List Styling
+======================================== */
+.Genralregister-Section .event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.04);
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 22px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Genralregister-Section .price-badge {
+    background: var(--accent);
+    color: var(--text-white);
+    padding: 2px 12px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   Special Offers Styling
+======================================== */
+.Genralregister-Section .offer-item {
+    padding-top: 22px;
+}
+
+.Genralregister-Section .offer-border {
+    border-top: 1px solid var(--border);
+    margin-top: 30px;
+}
+
+.Genralregister-Section .offer-item p {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    color: var(--text-light);
+}
+
+.Genralregister-Section .glass-pill {
+    background: var(--accent);
+    color: var(--text-white);
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 14px 0px;
+    font-size: 16px;
+    margin-top: 9px;
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* ========================================
+   General Register - Responsive Design
+======================================== */
+@media (max-width: 768px) {
+
+    .Genralregister-Section .glass-card {
+        max-width: 100%;
+    }
+}
+
+
+/* ========================================
+   Events Section - Main Wrapper
+======================================== */
+.Events-Sections {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Glass Card - Full Width */
+.Events-Sections .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px;
+    box-shadow: var(--box-shadow);
+}
+
+
+/* ========================================
+   Category Header
+======================================== */
+.Events-Sections .category-header {
+    border-left: 5px solid var(--accent);
+    background: rgba(0, 0, 0, 0.03);
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.Events-Sections .category-header h3 {
+    color: var(--text-dark);
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+
+/* ========================================
+   Event Items (3-Column Logic)
+======================================== */
+.Events-Sections .event-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 0;
+    color: var(--text-dark);
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.Events-Sections .event-item i {
+    color: var(--accent);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.Events-Sections .event-item:hover {
+    transform: translateX(5px);
+    color: var(--accent);
+}
+
+
+/* ========================================
+   Events Section - Responsive Design
+======================================== */
+@media (max-width: 768px) {
+
+    .Events-Sections .glass-card {
+        padding: 30px;
+    }
+
+    .Events-Sections .event-item {
+        font-size: 14px;
+        border-bottom: 1px solid var(--border);
+        padding: 11px 0;
+    }
+}

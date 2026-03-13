@@ -1,0 +1,108 @@
+/* ========================================
+   Footer Section - Main Wrapper
+======================================== */
+.Footer-Section {
+    background-color: var(--dark-bg); /* Dark Navy background */
+    width: 100%;
+    padding-top: 50px;
+}
+
+
+/* ========================================
+   Footer Container
+======================================== */
+.Footer-Section .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ========================================
+   Branding Area (Logos + Divider)
+======================================== */
+.Footer-Section .branding-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* University Logo */
+.Footer-Section .uni-logo {
+    height: auto;
+    width: 200px;
+    object-fit: contain;
+}
+
+
+/* Event Logo */
+.Footer-Section .event-logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Vertical Divider Line */
+.Footer-Section .vertical-line {
+    width: 1px;
+    height: 50px;
+    background-color: var(--text-light);
+}
+
+
+/* ========================================
+   Copyright Bar
+======================================== */
+.Footer-Section .copyright-bar {
+    background-color: var(--light-bg); /* Slightly darker navy strip */
+    padding: 15px 0;
+    text-align: center;
+}
+
+
+/* Copyright Text */
+.Footer-Section .copyright-bar p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--text-white);
+}
+
+
+/* Copyright Link */
+.Footer-Section .copyright-link {
+    color: var(--accent); /* Accent highlight color */
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* ========================================
+   Responsive Design
+======================================== */
+@media (max-width: 768px) {
+
+    .Footer-Section .branding-area {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Footer-Section .vertical-line {
+        display: none; /* Hide divider when stacked */
+    }
+
+    .Footer-Section .uni-logo {
+        height: auto;
+        width: 200px;
+        object-fit: contain;
+    }
+
+    .Footer-Section .event-logo {
+        height: auto;
+        width: 200px;
+        object-fit: contain;
+    }
+}

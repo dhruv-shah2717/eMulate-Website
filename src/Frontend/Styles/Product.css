@@ -1,0 +1,173 @@
+/* ========================================
+   Event Card Section - Main Wrapper
+======================================== */
+.Eventcard-Section {
+    margin: 150px 0px 60px 0;
+}
+
+
+/* ========================================
+   Main Glass Card
+======================================== */
+.Eventcard-Section .event-main-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    padding: 50px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: var(--box-shadow);
+}
+
+
+/* ========================================
+   Registration Badges
+======================================== */
+.Eventcard-Section .reg-badge-open {
+    background: #eef2ff;
+    color: var(--accent);
+    padding: 8px 20px;
+    border-radius: 7px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.Eventcard-Section .reg-badge-close {
+    background: #eef2ff;
+    color: rgb(246, 63, 63);
+    padding: 8px 20px;
+    border-radius: 7px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   Event Title & Details
+======================================== */
+.Eventcard-Section .event-name-title {
+    color: var(--text-dark);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 27px 0 27px 0;
+}
+
+.Eventcard-Section .details-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.Eventcard-Section .details-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    color: var(--text-dark);
+    opacity: 7;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.Eventcard-Section .icon-indicator {
+    width: 2.5px;
+    height: 22px;
+    background: var(--accent);
+    border-radius: 10px;
+    margin-right: 6px;
+}
+
+.Eventcard-Section .description-text {
+    color: var(--text-dark);
+    line-height: 1.6;
+    font-size: 0.9rem;
+    opacity: 7;
+}
+
+
+/* ========================================
+   Contact Side Panel
+======================================== */
+.Eventcard-Section .contact-side {
+    padding: 30px;
+    border-left: 1px solid var(--border);
+}
+
+.Eventcard-Section .side-title {
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.Eventcard-Section .coord-info {
+    margin-bottom: 20px;
+}
+
+.Eventcard-Section .coord-info label {
+    font-size: 12px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.Eventcard-Section .coord-info h6 {
+    color: var(--text-dark);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 7px 0;
+}
+
+.Eventcard-Section .phone-accent {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   Register Button
+======================================== */
+.Eventcard-Section .register-btn-small {
+    background: var(--accent);
+    color: var(--text-white);
+    border: none;
+    padding: 12px 39px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+    margin-top: 15px;
+}
+
+.Eventcard-Section .register-btn-small:hover {
+    background: var(--accent);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.2);
+}
+
+
+/* ========================================
+   Responsive Design
+======================================== */
+@media (max-width: 768px) {
+    .Eventcard-Section .contact-side {
+        border-left: none;
+        border-top: 1px solid var(--border);
+        padding: 30px 0 20px 0;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Eventcard-Section {
+        margin: 110px 0px 60px 0;
+    }
+
+    .Eventcard-Section .event-main-card {
+        padding: 30px;
+    }
+}

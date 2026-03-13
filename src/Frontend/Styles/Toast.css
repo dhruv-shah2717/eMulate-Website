@@ -1,0 +1,53 @@
+/* ============================================
+   Toast base - Main Wrapper
+============================================ */
+.my-toast {
+    z-index: 1000000;
+    font-size: 15px;
+    padding: 14px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ============================================
+   Success toast
+============================================ */
+.my-toast-success {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+
+/* ============================================
+   Error toast
+============================================ */
+.my-toast-error {
+    background: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+
+/* ============================================
+   Warning toast
+============================================ */
+.my-toast-warning {
+    background: #fff3cd;
+    color: #664d03;
+    border: 1px solid #ffecb5;
+}
+
+
+/* ============================================
+   Loading toast
+============================================ */
+.my-toast-loading {
+    background: #cff4fc;
+    color: #055160;
+    border: 1px solid #b6effb;
+}

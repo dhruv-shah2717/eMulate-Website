@@ -1,0 +1,274 @@
+/* ============================================
+   Sidebar layout - Main Wrapper
+============================================ */
+
+.admin .sidebar {
+    width: 280px;
+    height: 100vh;
+    background: var(--dark-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: var(--transition);
+    z-index: 1000;
+}
+
+.admin .sidebar.hide {
+    transform: translateX(-100%);
+}
+
+
+/* ============================================
+   Logo section
+============================================ */
+.admin .logo {
+    padding: 30px;
+    width: 100%;
+}
+
+.admin .logo img {
+    height: 80px;
+    width: 100%;
+}
+
+
+/* ============================================
+   Navigation menu
+============================================ */
+.admin .nav-menu {
+    padding: 10px 0;
+}
+
+.admin .menu-heading {
+    padding: 16px 25px 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.admin .nav-item {
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text-white);
+    border-left: 4px solid transparent;
+    transition: var(--transition);
+}
+
+.admin .nav-item i {
+    font-size: 18px;
+}
+
+.admin .nav-item:hover {
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.admin .nav-item.active {
+    background: linear-gradient(90deg, rgba(67, 97, 238, 0.25), transparent);
+    border-left-color: var(--accent);
+    font-weight: 500;
+}
+
+
+/* ============================================
+   Header section
+============================================ */
+.admin .header {
+    height: 70px;
+    background: var(--glass-bg);
+    position: fixed;
+    top: 0;
+    left: 260px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    z-index: 900;
+}
+
+.admin .hamburger {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.admin .user-profile {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.admin .user-profile i {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/* ============================================
+   Responsive Desgin
+============================================ */
+@media (max-width: 992px) {
+
+    .admin .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .admin .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .admin .header {
+        left: 0;
+    }
+
+    .admin .hamburger {
+        display: block;
+    }
+}
+
+
+/* ============================================
+   Dashboard content layout
+============================================ */
+.admin .dashboard-content {
+    padding: 24px;
+    min-height: calc(100vh - 70px);
+    margin-left: 280px;
+    margin-top: 70px;
+}
+
+@media (max-width: 992px) {
+    .admin .dashboard-content {
+        margin-left: 0;
+    }
+}
+
+
+/* ============================================
+   Page title and cards
+============================================ */
+.admin .page-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.admin .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.admin .card {
+    background: var(--glass-bg);
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--glass-border);
+    gap: 16px;
+    box-shadow: var(--box-shadow);
+}
+
+.admin .card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    font-size: 22px;
+}
+
+
+/* ============================================
+   Table container
+============================================ */
+.admin .table-card {
+    margin-top: 30px;
+    background: var(--glass-bg);
+    padding: 22px;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+}
+
+.admin .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 !important;
+}
+
+.admin .card-title h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.admin .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* ============================================
+   Data table styling
+============================================ */
+.admin .data-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+}
+
+.admin .data-table thead {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.admin .data-table th {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-light) !important;
+}
+
+.admin .data-table th,
+.admin .data-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.admin .data-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* ============================================
+   Responsive Desgin
+============================================ */
+@media (max-width: 768px) {
+
+    .admin .data-table {
+        min-width: 680px;
+    }
+
+    .admin .card-title h3 {
+        font-size: 16px;
+    }
+}

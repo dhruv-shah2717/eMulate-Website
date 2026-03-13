@@ -1,0 +1,139 @@
+/* ========================================
+   Login Section - Main Wrapper
+======================================== */
+.Login-Section {
+    margin: 150px 0px 60px 0;
+}
+
+
+/* ========================================
+   Glass Login Card
+======================================== */
+.Login-Section .glass-login-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    border-radius: 25px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    animation: floatEffect 5s ease-in-out infinite;
+}
+
+
+/* Floating Animation */
+@keyframes floatEffect {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* ========================================
+   Login Header
+======================================== */
+.Login-Section .login-header i {
+    font-size: 3.8rem;
+    color: var(--accent);
+}
+
+.Login-Section .login-header h2 {
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+
+/* ========================================
+   Form Styles
+======================================== */
+.Login-Section .login-form .form-label {
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.Login-Section .login-form .form-control {
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.6);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.Login-Section .login-form .form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+
+/* ========================================
+   Login Button
+======================================== */
+.Login-Section .login-btn {
+    background: var(--accent);
+    color: var(--text-white);
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.Login-Section .login-btn:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+
+/* ========================================
+   Login Footer
+======================================== */
+.Login-Section .login-footer a {
+    text-decoration: none;
+    color: rgb(255, 98, 98);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Login-Section .login-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   Validation Styling
+======================================== */
+.Login-Section .error-text {
+    color: #ff4d4d;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.Login-Section .form-control.is-invalid {
+    border: 1.5px solid #ff4d4d !important;
+    background: rgba(255, 77, 77, 0.05);
+}
+
+
+/* ========================================
+   Responsive Design
+======================================== */
+@media (max-width: 576px) {
+
+    .Login-Section {
+        margin: 110px 0px 60px 0;
+    }
+
+    .Login-Section .glass-login-card {
+        padding: 25px 30px;
+    }
+}
