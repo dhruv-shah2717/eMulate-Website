@@ -85,8 +85,8 @@ exports.login = async (req, res) => {
         // Store token in HTTP-only cookie
         res.cookie("token", token, {
             httpOnly: true,              // Prevent JavaScript access (security)
-            secure: false,               // Set true in production with HTTPS
-            sameSite: "lax",             // Required for cross-origin
+            secure: true,               // Set true in production with HTTPS
+            sameSite: "None",             // Required for cross-origin
             maxAge: 24 * 60 * 60 * 1000  // 24 hours
         });
 
