@@ -23,7 +23,7 @@ app.use(cookieParser());
 app.use(express.json());
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Frontend URL (Vite default)
+    origin: 'https://emulate-website-clul.onrender.com', // Frontend URL (Vite default)
     credentials: true               // Allow cookies
 }));
 
