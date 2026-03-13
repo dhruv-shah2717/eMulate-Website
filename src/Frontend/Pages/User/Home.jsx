@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Hero from "../../Assets/images/Hero.png";
+import Hero from "../../Assets/Images/Hero.png";
 import { NavLink } from "react-router-dom";
 
 function Home() {
