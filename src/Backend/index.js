@@ -25,7 +25,8 @@ app.use(express.json());
 
 app.use(cors({
     origin: 'https://e-mulate-website.vercel.app', // Frontend URL (Vite default)
-    credentials: true               // Allow cookies
+    credentials: true, // Allow cookies
+    methods: ["GET", "POST", "PUT", "DELETE"], 
 }));
 
 // ========================================
