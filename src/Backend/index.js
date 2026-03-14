@@ -24,7 +24,10 @@ app.use(cookieParser());
 app.use(express.json());
 
 app.use(cors({
-    origin: 'https://e-mulate-website.vercel.app', // Frontend URL (Vite default)
+    origin: [
+        "https://e-mulate-website.vercel.app",
+        "https://emulate-website-clul.onrender.com"
+    ], // Frontend URL (Vite default)
     credentials: true, // Allow cookies
     methods: ["GET", "POST", "PUT", "DELETE"], 
 }));
