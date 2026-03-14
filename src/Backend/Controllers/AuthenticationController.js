@@ -87,6 +87,7 @@ exports.login = async (req, res) => {
             httpOnly: true,              // Prevent JavaScript access (security)
             secure: true,               // Set true in production with HTTPS
             sameSite: "none",             // Required for cross-origin
+            path: "/",
             maxAge: 24 * 60 * 60 * 1000  // 24 hours
         });
 
@@ -118,6 +119,7 @@ exports.logout = (req, res) => {
     res.clearCookie("token", {
         httpOnly: true,
         secure: true,
+        path: "/",
         sameSite: "none",
     });
 
