@@ -15,6 +15,7 @@ const cookieParser = require('cookie-parser');
 // Initialize App
 // ========================================
 const app = express();
+app.set("trust proxy", 1);
 
 // ========================================
 // Middlewares
